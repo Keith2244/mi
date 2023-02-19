@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="java.js"></script>
+<title>Untitled Document</title>
+</head>
+
+<style>
+    html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+
+}
+::-webkit-scrollbar-track{
+    background: #333;
+}
+::-webkit-scrollbar-thumb{
+  background: white;  
+}
+</style>
+<body>
+    <h1 class="head">Welcome Please Sign Up Here</h1><br><br><br><br><br><br><br>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem culpa nulla voluptatem ad deserunt. Provident, nemo est. Voluptates fugit facilis aliquam tempora quos ut harum, ipsa architecto perferendis, hic reiciendis!
+    </p> <br> <br> <br> <br><br>
+<div class="container">
+<div class="hearder">
+</div>
+<div class="main">
+<form name="myform" method="post" onsubmit="return validateForm">
+    <h1 id="form_head">Sign Up</h1><br><br><br>
+<span>
+<label>NAME:</label><br /> <br>
+<input class="input" name="name" type="text" value="" required/>
+</span>
+
+<span><br /><br><br>
+<label>PASSWORD:</label><br />
+<input name="password" class="input" type="password" value=""/>
+</span>
+<span><br /><br><br>
+<label>EMAIL:</label><br />
+<input class="input" type="email" value=""/><br />
+
+</span><br />
+<input class="submit" type="submit" value="submit" />
+</form>
+</div>
+</div>
+      <br><br><br><br>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Est soluta dolorem a tempore dicta ipsum in minima impedit quibusdam assumenda omnis repudiandae laborum, mollitia minus vero officiis quasi labore animi.</p><br><br><br><br>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, nihil. Perferendis repellendus itaque sunt quaerat nemo officia consequatur illo aut suscipit voluptates, quos, ea laborum nobis accusantium, amet fuga eum.
+    </p><br><br><br><br>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis reiciendis quaerat nulla molestias cum magnam doloribus harum. Illum tempora dolores ut laboriosam incidunt sed odio veniam magni rem error! Excepturi.
+    </p><br><br><br><br><br>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, omnis repellat vel, excepturi quisquam et explicabo assumenda libero eaque delectus ea qui similique ullam possimus odio! Beatae quam iste nesciunt.
+    </p><br><br><br><br><br><br>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet distinctio perspiciatis eligendi vel voluptatem magni eos, quidem deserunt esse, voluptatum beatae, quasi quaerat dolore debitis id ullam tempore ea? Repellendus?
+    </p>
+    <p><br><br><br><br><br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit est ea laborum itaque ad illo. Quia repellat modi molestias quis quod at? Aut ex cum suscipit minus veritatis vel quasi?
+    </p><br><br>
+    <footer>
+        <section class="footer">
+            <div class="container">
+                
+            </div>
+            <p>&copy;© 2023 FitLife Gym</p>
+        </section>
+    </footer>
+
+    <script>
+        function validateForm(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+        function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
+
+  function validateForm() {
+    var email = document.getElementById("email").value;
+    if (validateEmail(email)) {
+      alert("Email address is valid");
+      return true;
+    } else {
+      alert("Email address is not valid");
+      return false;
+    }
+  }
+
+      </script>
+</body>  
+</html>  
+</html>
